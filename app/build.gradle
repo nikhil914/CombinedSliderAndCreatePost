@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.combinedsliderandcreatepost"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation "androidx.preference:preference:1.1.0"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation "androidx.annotation:annotation:1.1.0"
+
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.fragment:fragment:1.2.2"
+    implementation 'androidx.work:work-runtime:2.3.1'
+
+
+    // JetPack Dependencies
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.github.florent37:shapeofview:1.4.7'
+    implementation 'net.karthikraj.shapesimage:shapesimage:1.0.2'
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    // material drawer
+    implementation 'com.mikepenz:materialdrawer:6.1.2'
+    implementation 'com.mikepenz:crossfader:1.6.0'
+
+
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    implementation 'com.hbb20:ccp:2.3.5'
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.0'
+    implementation 'jp.wasabeef:blurry:3.0.0'
+    implementation 'com.eightbitlab:blurview:1.6.3'
+    implementation 'io.alterac.blurkit:blurkit:1.1.0'
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.14'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // SMS AUTO Retrieval API
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.3.0'
+
+    // Google Map dependencies
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.2.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+
+
+    // Volley & Retrofit
+//    implementation 'com.android.volley:volley:1.1.1'
+//    implementation 'dev.dworks.libs:volleyplus:+'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.7.1'
+
+    // uCrop
+    implementation 'com.github.yalantis:ucrop:2.2.4'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'com.github.jaiselrahman:FilePicker:1.3.2'
+}
+
